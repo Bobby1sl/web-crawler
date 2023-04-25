@@ -1,0 +1,2232 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>酷6网</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <script src="https://hm.baidu.com/hm.js?cadc05fa9075c3aea60585cd886a188c"></script><script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?cadc05fa9075c3aea60585cd886a188c";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        (function () {
+            var u = navigator.userAgent;
+            if (u && u != "") {
+                var b = {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+                    weixin: u.toLowerCase().match(/MicroMessenger/i) == "micromessenger",
+                    qq: u.indexOf('MQQbrowser') > -1 || u.indexOf('QQ/') > -1
+                };
+
+                var is_baidu = document.referrer.indexOf('baidu.com') > -1;
+                if (b.ios || b.mobile) {
+                    location.replace("http://m.ku6.com");
+                }
+                ;
+
+            }
+        })();
+    </script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="./2017/ie8.css">
+    <script src="/scripts/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+        body {
+            background-image: none;
+            background-color: #f0f0f0;
+        }
+
+        #live-container {
+            margin-top: 10px;
+            width: 904px;
+        }
+
+        .ckl_footer .ckl_copy {
+            padding-top: 0px;
+        }
+
+        .navbar-logo {
+            position: absolute;
+            left: 30px;
+            top: 15px;
+        }
+
+        .navbar {
+            height: 60px;
+            padding: 0px;
+            min-width: 944px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: inherit;
+            color: #000;
+        }
+
+        .title-li {
+            line-height: 20px;
+            font-size: 16px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .title-li .li-on {
+            background-color: #8CC03B;
+            border-radius: 15px;
+            color: #fff;
+        }
+
+        .title-li a {
+            font-family: "宋体";
+
+            padding: 8px 12px;
+        }
+
+        .title-li a:hover {
+            background-color: #8CC03B;
+            border-radius: 15px;
+            padding: 8px 12px;
+            color: #fff;
+        }
+
+        .register {
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            height: 32px;
+            background-image: url(http://rbv01.ku6.com/wifi/o_1bui8a9gu11sk1jof1si6c8s5c0a);
+            background-repeat: no-repeat;
+            background-position: 0px 0px;
+            padding-top: 5px;
+            padding-left: 30px;
+            color: #8CC03B;
+        }
+
+        .register a {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #8CC03B;
+            font-size: 16px;
+        }
+        .container {
+            width: 903px;
+        }
+        .big-eyes {
+            height: 325px;
+            background-color: #fff;
+            position: relative;
+            margin:0 auto;
+            width: 888px;padding: 20px 33px 0 32px;margin-top: 76px;
+        }
+
+
+        .big-eyes .eye-img {
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: block;
+            height: 325px;
+            width: 100%;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+        }
+
+        .container {
+            margin-top: 0px;background-color: #fff;
+            padding-left: 25px;
+            padding-right: 25px;padding-top:0px;
+        }
+
+        .item-coin {
+            position: absolute;
+            left: 0;
+            bottom: 17px;
+            z-index: 9;
+            width: 100%;
+            text-align: center;
+        }
+
+        .item-coin a {
+            background-position: -31px -99px;
+            padding: 0 8px;
+            margin-right: 5px;
+            background-image: url('/images/login_coin.png');
+            background-repeat: no-repeat;
+        }
+
+        .item-coin a.ckl_on {
+            background-position: -16px -99px;
+        }
+    </style>
+
+    <style type="text/css">
+        body,
+        th,
+        td,
+        input,
+        select,
+        textarea,
+        button {
+            font: 14px/1.5em "microsoft yahei";
+        }
+
+        .vjs-paused .vjs-big-play-button,
+        .vjs-paused.vjs-has-started .vjs-big-play-button {
+            display: block;
+        }
+
+        .copyRight {
+            margin-top: 0;
+        }
+
+        .content2 {
+            background-image: none;
+            background-color: #dfdfdd;
+            margin-top: 43px;
+        }
+
+        .contant {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .blue14t a {
+            font-size: 14px;
+            font-weight: bold;
+            font-color: fff;
+        }
+
+        .lyb {
+            width: 726px;
+        }
+
+        .mtitle,
+        z_left {
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+
+        .mtitle2 {
+            margin: 0px 0 20px 0;
+            padding: 0
+        }
+
+        .mt2 {
+            margin-top: 20px;
+            margin-top: 20px \9;
+            *margin-top: 40px;
+            _margin-top: 20px;
+        }
+
+        .t1_mt2 {
+            margin-left: 10px;
+        }
+
+        .t6_w4 {
+            display: inline;
+            margin: 20px 8px 0 10px;
+            width: 230px;
+        }
+
+        .t12_nr2 ul li {
+            float: left;
+            line-height: 24px;
+            list-style: none outside none;
+            padding: 20px 11px 0;
+            text-align: left;
+            width: 170px;
+        }
+
+        .vodp3 {
+            border: 1px solid #333333;
+            float: left;
+            height: 370px;
+            margin: 17px 0 0 5px;
+            overflow: hidden;
+            width: 550px;
+        }
+
+        .ulist2 li {
+            border: 1px solid #333333;
+            display: inline;
+            float: left;
+            height: 112px;
+            margin: 0 0 15px 11px;
+            overflow: hidden;
+            width: 112px;
+        }
+
+        .i_pk_bor {
+            background: none no-repeat scroll center top transparent;
+            border: 1px solid #A0C4EC;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .i_pk_pl {
+            width: 210px;
+        }
+
+        .i_pk_p2 {
+            width: 210px;
+        }
+
+        .i_c1 {
+            color: #FF0000;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .i_c3 {
+            color: #FF0000;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .i_c4 {
+            color: #FF0000;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .navBox {
+            background: url(http://i2.ku6img.com/cms/news/201008/12/cx30nav2.jpg) repeat-x scroll 0 0;
+            height: 30px;
+        }
+
+        .navBox ul {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .navBox li {
+            float: left;
+            display: inline-block;
+            line-height: 32px;
+            font-size: 14px;
+        }
+
+        .navBox li a {
+            color: #FFF;
+            margin: 0 10px;
+        }
+
+        .picNext li h3 {
+            font-size: 12px;
+        }
+
+        .fragA ul {
+            padding: 12px 0 15px;
+        }
+
+        .fragA ul li {
+            color: #333333;
+            display: inline;
+            float: left;
+            height: 24px;
+            line-height: 24px;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            text-align: center;
+            width: 68px;
+        }
+
+        element.style {
+            background-color: #FFFFFF;
+            border: 1px solid #9FC4EC;
+            margin-top: 0;
+        }
+
+        .piclb {
+            background: none repeat scroll 0 0 #454545;
+            border-color: -moz-use-text-color #000000 #000000;
+            border-right: 1px solid #000000;
+            border-style: none solid solid;
+            border-width: medium 1px 1px;
+            margin-top: -10px;
+            padding: 0;
+            text-align: left;
+            width: 978px;
+        }
+
+        .i_pk_nr_nr1 {
+            padding: 10px;
+            width: 489px;
+        }
+
+        .i_pk_nr2 {
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 10px;
+            width: 488px;
+        }
+
+        .i_pk_nr {
+            border: 0 dotted #a0c4ec;
+            height: 100%;
+            overflow: hidden;
+            padding-bottom: 10px;
+            width: 488px;
+        }
+
+        .h_1 {
+            background: url("http://rbv01.ku6.com/wifi/o_1btueb71p1fvpag2trdtjivvga") no-repeat scroll center top transparent;
+            height: 571px;
+            margin: 0 auto;
+            padding: 0;
+            width: 980px;
+        }
+
+        .h_bg2 {
+            background: url("http://rbv01.ku6.com/wifi/o_1btueb71p1fvpag2trdtjivvga") no-repeat scroll center top transparent;
+        }
+
+        .h_1l {
+            margin-top: 5px;
+            padding: 400px 0 0;
+            width: 466px;
+        }
+
+        .hbg {
+            background: none repeat scroll 0 0 #ddf1e9;
+        }
+
+        .bkblBox {
+            padding: 0px 14px 0px;
+        }
+
+        .chatInfoBox {
+            height: 0px;
+            padding: 0px;
+        }
+
+        input.chatInfoBtn {
+            height: 25px;
+            left: 300px;
+            position: absolute;
+            top: 40px;
+            width: 40px;
+        }
+
+        .z_left {
+            border-top: 0px solid #2475D1;
+            margin: 0;
+            padding: 0;
+            width: 320px;
+        }
+
+        #follow {
+            text-align: center;
+            width: 100%;
+            z-index: 1000;
+            background: url("http://image.ku6.com/image/201004/29/KU629112702ayV6iH.gif") repeat-x scroll 0 0 transparent;
+        }
+
+        .fdNavbox {
+            display: none;
+            height: 48px;
+            overflow: hidden;
+            width: 960px;
+        }
+
+        ul.fdNav {
+            background: url("http://img.c4.ku6.cn/news/upload/20100429/dongwen/fddhbg/fddh_bg.png") no-repeat scroll 0 0 transparent;
+            height: 36px;
+            padding: 8px 0 7px 10px;
+            width: 950px;
+        }
+
+        .fdNav .fd1 {
+            width: 160px;
+        }
+
+        .fdNav li {
+            float: left;
+            overflow: hidden;
+            padding-left: 75px;
+        }
+
+        .fdNav .fd2 {
+            width: 170px;
+        }
+
+        .fdNav .fd3 {
+            width: 165px;
+        }
+
+        .fdNav .fd4 {
+            width: 150px;
+        }
+
+        .fdNav li a {
+            padding-right: 12px;
+        }
+
+        .main_nav {
+            background: url("http://vi0.ku6img.com/data2/p5/cms/2013/4/11/pic_1365670612178.jpg") no-repeat scroll center top transparent;
+            clear: both;
+            font-size: 14px;
+            font-weight: bold;
+            height: 38px;
+            line-height: 43px;
+            margin: 0 auto;
+            text-align: center;
+            width: 960px;
+        }
+
+        .main_nav a {
+            color: #fff;
+        }
+
+        .h_1r {
+            margin: 14px 0 0;
+            padding: 10px;
+        }
+
+        .h_1r dl {
+            padding: 15px 0 0;
+            text-align: center;
+            width: 459px;
+            height: 400px;
+        }
+
+        .h_1r dl a {
+            color: #000;
+        }
+        /* 头条区 */
+
+        #banner {
+            width: 276px;
+            margin: 0px auto;
+            height: 316px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        #btn {
+            display: inline;
+            width: 80px;
+            hegiht: 18px;
+            position: absolute;
+            z-index: 2;
+            bottom: 3px;
+            right: 0;
+        }
+
+        #btn a {
+            font: 700 11px "Arial";
+            color: #fff;
+            background: #666;
+            border: 1px solid #000;
+            float: left;
+            width: 18px;
+            height: 18px;
+            line-height: 18px;
+            text-align: center;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        #btn a.activeSlide {
+            color: #000;
+            border: 1px solid #999;
+            background: #f0f0f0;
+        }
+
+        #btn a:hover {
+            color: #000;
+            border: 1px solid #999;
+            background: #f0f0f0;
+        }
+
+        body {
+            margin: 0 auto;
+            padding: 0;
+            font-size: 12px;
+            color: #e2dbc1;
+        }
+
+        h1,
+        em,
+        ul,
+        li,
+        dl,
+        dd,
+        dt,
+        p,
+        a {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #e2dbc1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            border: 0;
+        }
+
+        .mt {
+            margin-top: 10px;
+        }
+
+        .mb {
+            margin-bottom: 10px;
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .main {
+            width: 960px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .title {
+            height: 34px;
+            background: #f0f0f0;
+            text-align: center;
+            font-size: 14px;
+            line-height: 34px;
+            font-weight: bold;
+        }
+
+        .box_con {
+            background: none repeat scroll 0 0 #E5CA7E;
+            width: 960px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .b_left {
+            float: left;
+            width: 276px;
+            height: 316px;
+            background: #f0f0f0;
+        }
+
+        .b_mid {
+            float: left;
+            width: 432px;
+            overflow: hidden;
+            height: 316px;
+            margin: 0 10px;
+            background: #fff;
+        }
+
+        .b_mid .b1,
+        .b_mid .b2 {
+            display: block;
+            width: 405px;
+            padding: 1px 13px 2px;
+        }
+
+        .b_mid .b1 h1 {
+            width: 382px;
+            display: block;
+            text-align: center;
+            padding-bottom: 6px;
+            line-height: 30px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .b_mid .b1 h1 a {
+            color: #000;
+        }
+
+        .b_mid .b1 em {
+            display: block;
+            font-style: normal;
+            width: 382px;
+            line-height: 20px;
+        }
+
+        .b_mid ul {
+            width: 382px;
+            padding: 0 25px;
+            overflow: hidden;
+        }
+
+        .b_mid ul li {
+            width: 382px;
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .b_mid ul li a {
+            color: #000;
+        }
+
+        .b_mid .b2 p img {
+            display: block;
+            width: 114px;
+            height: 73px;
+            margin-bottom: 5px;
+        }
+
+        .b_mid .b2 p span {
+            display: block;
+            width: 114px;
+            line-height: 20px;
+        }
+
+        .b_right {
+            float: left;
+            width: 202px;
+            padding: 15px 15px 8px 15px;
+            background: #fff;
+            height: 293px;
+        }
+
+        .b_right dl {
+            width: 202px;
+            overflow: hidden;
+        }
+
+        .b_right dl dd {
+            float: left;
+            margin-right: 10px;
+            width: 85px;
+            height: 99px;
+        }
+
+        .b_right dl dd img {
+            display: block;
+            width: 190px;
+            height: 90px;
+        }
+
+        .b_right dl dt {
+            float: left;
+            width: 107px;
+            overflow: hidden;
+        }
+
+        .b_right dl dt p {
+            display: block;
+            height: 24px;
+            width: 107px;
+            text-align: center;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .b_right ul {
+            margin-top: 10px;
+            width: 202px;
+            overflow: hidden;
+        }
+
+        .b_right ul li {
+            width: 202px;
+            line-height: 23px;
+        }
+
+        .w130 {
+            background: #dedede;
+            padding: 5px 8px;
+            margin-top: 5px;
+            display: block;
+            zoom: 1;
+            overflow: hidden;
+        }
+
+        .w130 dt {
+            width: 130px;
+            height: 80px;
+            float: left;
+        }
+
+        .w130 dt img {
+            width: 130px;
+            height: 80px;
+            padding: 3px;
+            background: #fff;
+        }
+
+        .w130 dd {
+            width: 240px;
+            float: right;
+        }
+
+        .w130 p {
+            line-height: 20px;
+        }
+
+        .w130 .p1 {
+            font-size: 14px;
+            border-bottom: 1px dotted #a2a2a2;
+        }
+
+        .w130 .p2 {
+            margin-top: 5px;
+        }
+
+        .w130 .p2,
+        .w130 p a,
+        .w130 p a:hover {
+            color: #26002e;
+        }
+        /* common */
+
+        #fadelist1cont img {
+            border: none;
+        }
+
+        #fadelist1cont .focus,
+        #fadelist1cont .focus ul,
+        #fadelist1cont .focus li,
+        #fadelist1cont .focus dl,
+        #fadelist1cont .focus dd,
+        #fadelist1cont .focus dt {
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        #fadelist1cont .focus {
+            position: relative;
+            overflow: hidden;
+        }
+        /* 幻灯片 */
+
+        #fadelist1cont .focus .focus_imgul li {
+            position: absolute;
+        }
+        /* 提示文字 */
+
+        #fadelist1cont .focus .tips {
+            width: 100%;
+        }
+
+        #fadelist1cont .focus .focus_tipul li {
+            position: absolute;
+            bottom: 0px;
+            border-top: 1px solid #3298cb;
+        }
+
+        #fadelist1cont .focus .focus_tipul dl {
+            position: relative;
+        }
+
+        #fadelist1cont .focus .focus_tipul dd {
+            position: absolute;
+            background: #000;
+            opacity: 0.35;
+            filter: alpha(opacity=35);
+            -moz-opacity: 0.35;
+        }
+
+        #fadelist1cont .focus .focus_tipul dt {
+            position: absolute;
+            padding: 10px;
+            color: #fff;
+            font-size: 14px;
+        }
+        /* 按钮背景 */
+        /* 按钮 */
+
+        #fadelist1cont .focus .focus_btnul {
+            width: 62px;
+            height: 18px;
+            color: #fff;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        #fadelist1cont .focus .focus_btnul .btn {
+            width: 13px;
+            height: 13px;
+            line-height: 13px;
+            font-size: 12px;
+        }
+
+        #fadelist1cont .focus .focus_btnul li {
+            float: left;
+            border: #FFF 1px solid;
+            margin-right: 2px;
+            cursor: pointer;
+        }
+
+        #fadelist1cont .focus .focus_btnul div {
+            opacity: 0.35;
+            filter: alpha(opacity=35);
+            -moz-opacity: 0.35;
+            position: absolute;
+            background: #fff;
+            display: none;
+        }
+
+        #fadelist1cont .focus .focus_btnul span {
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #fadelist1cont .focus .focus_btnul li.buttonOn {
+            border-color: #f2b921;
+        }
+
+        #fadelist1cont .focus .focus_btnul li.buttonOn div {
+            display: block;
+        }
+        /* 配置项 */
+
+        #fadelist1cont {
+            width: 276px;
+            height: 316px;
+        }
+
+        #fadelist1cont .focus {
+            width: 276px;
+            height: 316px;
+        }
+
+        #fadelist1cont .focus .focus_imgul img {
+            width: 276px;
+            height: 316px;
+        }
+
+        #fadelist1cont .focus .tips {
+            height: 30px;
+        }
+
+        b a {
+            color: #3E0000;
+        }
+
+        a,
+        a:hover {
+            color: #000;
+        }
+
+        .area {
+            width: 960px;
+            margin: 8px auto 0 auto;
+            position: relative;
+            padding: 0;
+        }
+
+        .mBox {
+            float: left;
+            display: inline;
+        }
+
+        .sBox {
+            float: right;
+        }
+
+        .areaSpace {
+            height: 10px;
+            clear: both;
+            display: block;
+            line-height: 10px;
+            overflow: hidden;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-size: 14px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .left,
+        .con {
+            float: left;
+            display: inline;
+            zoom: 1;
+            overflow: hidden;
+        }
+
+        .right {
+            float: right;
+            display: inline;
+            zoom: 1;
+            overflow: hidden;
+        }
+
+        .list {
+            display: block;
+            zoom: 1;
+            overflow: hidden;
+        }
+        /**/
+
+        p {
+            line-height: 22px;
+        }
+
+        p span,
+        p span a,
+        p span a:hover {
+            color: #006CFF;
+        }
+
+        .mod {
+            width: 960px;
+        }
+
+        .mod .title {
+            background: url(http://vi3.ku6img.com/data2/p12/cms/2017/8/6/pic_1502010785260.jpg) no-repeat left top;
+            height: 38px;
+            padding: 0 10px;
+        }
+
+        .mod h3 {
+            background: url(img/h3.gif) no-repeat left 7px;
+            padding-left: 20px;
+            color: #fff;
+            font-size: 16px;
+            line-height: 38px;
+            text-align: left;
+        }
+
+        .mod h3 span {
+            float: right;
+            color: #19549A;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .mod h3 span a,
+        .mod h3 span a:hover {
+            color: #19549A;
+        }
+
+        .w126 {
+            width: 150px;
+            float: left;
+            display: inline;
+        }
+
+        .w126 dt {
+            width: 150px;
+            height: 180px
+        }
+
+        .w126 dt a {
+            display: block;
+            zoom: 1;
+            overflow: hidden;
+            padding: 2px;
+            width: 150px;
+            height: 180px;
+            background: #fff;
+            border: 1px solid #E1E1E1;
+        }
+
+        .w126 dt img {
+            width: 150px;
+            height: 180px;
+        }
+
+        .w126 dd {
+            margin: 5px 0 0 0;
+            line-height: 20px;
+        }
+        /*girl*/
+
+        .girl,
+        .girls {
+            margin-top: 0px;
+        }
+
+        .girl .list {
+            width: 940px;
+            height: 500px;
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        .girl dl {
+            margin: 12px 17px 0;
+            display: inline;
+        }
+
+        .girl dd span {
+            float: right;
+            color: #767676;
+        }
+
+        .girl dd b {
+            font-weight: normal;
+            color: #E34500;
+        }
+
+        .girl dd a {
+            color: #000;
+            font-size: 14px;
+        }
+
+        .girl dd .p2 {
+            text-align: center;
+        }
+        /*girls*/
+
+        .girls .list {
+            width: 940px;
+            height: 240px;
+            background: #fff;
+            padding: 0 10px;
+        }
+
+        .girls dl {
+            margin: 12px 20px 0 18px;
+        }
+
+        .girls dd span {
+            float: right;
+            color: #767676;
+        }
+
+        .girls dd b {
+            font-weight: normal;
+            color: #E34500;
+        }
+
+        .girls dd a {
+            color: #000;
+            font-weight: bold;
+        }
+
+        .girls dd .p2 {
+            text-align: center;
+        }
+
+        .w127 {
+            width: 270px;
+            float: left;
+            display: inline;
+        }
+
+        .w127 dt {
+            width: 270px;
+            height: 160px
+        }
+
+        .w127 dt a {
+            display: block;
+            zoom: 1;
+            overflow: hidden;
+            padding: 2px;
+            width: 270px;
+            height: 160px;
+            background: #fff;
+            border: 1px solid #E1E1E1;
+        }
+
+        .w127 dt img {
+            width: 270px;
+            height: 160px;
+        }
+
+        .w127 dd {
+            margin: 5px 0 0 0;
+            line-height: 20px;
+        }
+
+        .mt10 {
+            margin-top: 10px;
+        }
+
+        .m256 {
+            background: url("http://i1.ku6img.com/cms/ent/201103/30/a2.gif") repeat-x scroll left top transparent;
+            height: 446px;
+        }
+
+        .mod {
+            border: 1px solid #ffffff;
+            margin: 0 auto 10px;
+            width: 958px;
+        }
+
+        .m256 img {
+            float: left;
+        }
+
+        .content {
+            background: url("http://i2.ku6img.com/cms/ent/201103/30/q2.jpg") repeat-x scroll left top transparent;
+            border: 1px solid #D5BD8D;
+            display: inline;
+            float: left;
+            height: 410px;
+            margin: 24px 0 0 14px;
+            width: 258px;
+        }
+
+        .content p {
+            color: #FFFFFF;
+            height: 300px;
+            margin: 8px;
+            text-align: left;
+            width: 246px;
+        }
+
+        .upload {
+            float: left;
+            height: 410px;
+            margin: 21px 0 0 15px;
+            width: 650px;
+        }
+
+        .ut {
+            float: left;
+            height: 50px;
+            width: 650px;
+        }
+
+        .ut p {
+            color: #FFFFFF;
+            display: inline;
+            float: left;
+            height: 30px;
+            padding: 0 10px;
+            text-align: left;
+            width: 455px;
+        }
+
+        .wrapper {
+            background: none repeat scroll 0 0 #FFFFFF;
+            clear: both;
+            margin: 0 auto;
+            width: 960px;
+            padding-bottom: 10px;
+            background: #E5CA7E;
+        }
+
+        .wrapper h3 {
+            background: url("http://vi2.ku6img.com/data1/p4/cms/2015/8/17/pic_1439800067104.jpg") no-repeat scroll center top transparent;
+            color: #231816;
+            font-size: 16px;
+            height: 38px;
+            line-height: 38px;
+            padding-left: 40px;
+        }
+
+        .bigman {
+            background: url("http://i0.ku6img.com/cms/ent/201203/31/leslie1.jpg") no-repeat scroll left top transparent;
+            height: 350px;
+            width: 960px;
+        }
+
+        .bigman .bigman_article {
+            float: right;
+            height: 310px;
+            margin-right: 12px;
+            margin-top: 10px;
+            padding: 8px;
+            width: 580px;
+        }
+
+        .bigman .bigman_article h5 {
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 29px;
+        }
+
+        .bigman .bigman_article p {
+            color: #FFFFFF;
+            line-height: 18px;
+        }
+
+        .line_box {
+            width: 960px;
+            margin: 0 auto;
+            height: 10px;
+            font-size: 0;
+            line-height: 10px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .border {
+            border: 1px solid #e0e0e0;
+        }
+
+        .module_12 {
+            width: 960px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+
+        .module_12 .title {
+            width: 950px;
+            height: 38px;
+            padding-left: 10px;
+            background: url("http://rbv01.ku6.com/wifi/o_1btuei47413fvnkm18lk1t5l1hotf") no-repeat scroll left top transparent;
+        }
+
+        .module_12 .title h1 {
+            width: 300px;
+            line-height: 38px;
+            font-size: 16px;
+            color: #fff;
+            padding: 0 0 0 15px;
+            text-align: left;
+            float: left;
+            display: block;
+        }
+
+        .module_12 .box {
+            width: 958px;
+            padding: 5px 0 10px 0;
+            overflow: hidden;
+            border-top: none;
+            background-color: #fff;
+        }
+
+        .module_12 .box dl {
+            padding: 0px;
+            width: 328px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .module_12 .box dl dd {
+            width: 328px;
+            height: 330px;
+            overflow: hidden;
+            margin-bottom: 5px;
+        }
+
+        .module_12 .box dl dt {
+            width: 328px;
+            font-size: 14px;
+        }
+
+        .module_12 .box dl dt a {
+            color: #000;
+        }
+
+        .module_12 .box .r_box {
+            width: 920px;
+            margin: auto;
+        }
+
+        .module_12 .box .r_box span {
+            width: 920px;
+            display: block;
+            overflow: hidden;
+            margin: 5px auto;
+            clear: both;
+        }
+
+        .module_12 .box .r_box span h1 {
+            width: 920px;
+            display: block;
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .module_12 .box .r_box span h1 a {
+            color: #000;
+        }
+
+        .module_12 .box .r_box span p {
+            width: 920px;
+            display: block;
+            text-indent: 25px;
+            padding-top: 5px;
+        }
+
+        .module_12 .box .r_box span p a {
+            color: #000;
+        }
+
+        .module_12 .box .r_box ul {
+            width: 920px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .module_12 .box .r_box ul li {
+            width: 215px;
+            float: left;
+            margin-left: 11px;
+        }
+
+        .module_12 .box .r_box ul li p {
+            display: block;
+            width: 209px;
+            height: 157px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            padding: 2px;
+        }
+
+        .module_12 .box .r_box ul li img {
+            width: auto;
+            height: 157px;
+            display: block;
+        }
+
+        .module_12 .box .r_box ul li em {
+            display: block;
+            width: 215px;
+            font-style: normal;
+            height: 60px;
+        }
+
+        .module_12 .box .r_box ul li em a {
+            color: #000
+        }
+
+        .rN .lineDot {
+            padding: 10px 0;
+        }
+
+        .rN .aL {
+            width: 960px;
+        }
+
+        .rN .aL,
+        .rNL {
+            float: left;
+        }
+
+        .rNL,
+        .rNM {
+            width: 475px;
+        }
+
+        .rNL .mBox,
+        .rNM .mBox {
+            padding: 10px;
+        }
+
+        .rN .aR,
+        .rNM {
+            float: right;
+        }
+
+        .rNL .mBox,
+        .rNM .mBox {
+            padding: 10px;
+        }
+
+        .rNR {
+            width: 180px;
+            overflow: hidden;
+            clear: none;
+        }
+
+        .rNR .sTit {
+            padding-left: 15px;
+        }
+
+        .rNR .picList {
+            width: 180px;
+        }
+
+        .aBorder {
+            border: 1px solid #BFA05F;
+            background-color: #FFFFFF;
+        }
+
+        .mTit {
+            background: url(http://i1.ku6img.com/cms/ent/201203/31/bian375.png) repeat-x scroll 0 0;
+            height: 35px;
+            border-bottom: 1px solid #BFA05F;
+            padding-left: 40px;
+        }
+
+        .mTit .more,
+        .sTit .more {
+            line-height: 35px;
+            padding-right: 15px;
+        }
+
+        .sTit {
+            height: 35px;
+            background: url(img/xdota.png) repeat-x scroll 0 bottom;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .sTit h2 {
+            line-height: 35px;
+        }
+
+        .vList li {
+            background: url(img/ico.png) no-repeat scroll 0 -166px;
+            font-size: 12px;
+            line-height: 15px;
+            height: 15px;
+            overflow: hidden;
+        }
+
+        .area .aR {
+            float: right;
+            width: 180px;
+        }
+
+        .area .aL {
+            float: left;
+        }
+
+        .aR,
+        .aM,
+        .aL {
+            display: inline;
+        }
+
+        .aR .picList li {
+            padding-top: 12px;
+        +padding-top: 10px;
+            _padding-top: 10px;
+        }
+
+        .picA160 {
+            width: 162px;
+        }
+
+        .picA160 dt {
+            width: 162px;
+            height: 102px;
+        }
+
+        .picA160 dt a,
+        .picA160 dt img {
+            width: 160px;
+            height: 100px;
+        }
+
+        .picA160 dd {
+            background: url("http://i3.ku6img.com/cms/ent/201103/30/a3.jpg") no-repeat scroll 0 0 transparent;
+            height: 100px;
+            padding-top: 5px;
+            width: 162px;
+        }
+
+        .pic .icoPlay {
+            background: none;
+        }
+
+        .a_3R .aL {
+            width: 248px;
+        }
+
+        .a_3R .aM {
+            width: 360px;
+            float: left;
+        }
+
+        .rGL .vBox {
+            height: 736px;
+        }
+
+        .vBox {
+            padding: 0 10px;
+            background-color: #F6F6F6;
+        }
+
+        dl.newsInfo {}
+
+        .newsInfo dt {
+            float: left;
+        }
+
+        .newsInfo dd {
+            float: left;
+            padding: 10px 0 0 10px;
+            width: 192px;
+        }
+
+        .listDot li {
+            background: url(img/ico.png) no-repeat scroll -52px 10px;
+            padding-left: 10px;
+        }
+
+        .area .rGR {
+            width: 698px;
+            height: 365px;
+            margin-bottom: 5px;
+        }
+
+        .rGR .mapPicDd {
+            background-color: #FFFFFF;
+        }
+
+        .rGR .picList {
+            width: 696px;
+            margin: 0 auto;
+            padding-bottom: 0;
+        }
+
+        .rGR .picList li {
+            float: left;
+            width: 173px;
+            padding-bottom: 12px;
+        }
+
+        .rGR .picList .lastLi {
+            border: none;
+        }
+
+        .picA144 {
+            width: 146px;
+        }
+
+        .picA144 dt {
+            width: 146px;
+            height: 92px;
+        }
+
+        .picA144 dt a,
+        .picA144 dt img {
+            width: 144px;
+            height: 90px;
+        }
+
+        .picA144 dd {
+            height: 44px;
+            padding-top: 5px;
+        }
+
+        .title a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .title a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .title a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .mTit h2 {
+            color: #231816;
+            display: block;
+            float: left;
+            font-size: 16px;
+            line-height: 35px;
+            width: 300px;
+        }
+
+        .mTit a:link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .mTit a:visited {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .mTit a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .rNL,
+        .rNM {
+            width: 475px;
+            display: inline;
+        }
+
+        .line_box {
+            width: 960px;
+            margin: 0 auto;
+            height: 10px;
+            font-size: 0;
+            line-height: 10px;
+            overflow: hidden;
+            clear: both;
+        }
+
+        .border {
+            border: 1px solid #e0e0e0;
+        }
+
+        .module_16 {
+            width: 960px;
+            overflow: hidden;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+
+        .module_16 .title {
+            width: 950px;
+            height: 38px;
+            padding-left: 10px;
+            background: url(http://vi2.ku6img.com/data1/p4/cms/2015/8/17/pic_1439800067104.jpg);
+        }
+
+        .module_16 .title h1 {
+            width: 300px;
+            line-height: 38px;
+            font-size: 16px;
+            color: #000;
+            text-align: left;
+            display: block;
+            float: left;
+            color: #231816;
+            padding: 0 0 0 40px;
+        }
+
+        .module_16 .box {
+            padding: 10px 10px 0 10px;
+            width: 938px;
+            overflow: hidden;
+            border-top: none;
+            background: #fff;
+        }
+
+        .module_16 .box dl {
+            width: 538px;
+            float: left;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .module_16 .box dl dd.pic {
+            float: left;
+            width: 248px;
+            margin-right: 10px;
+            *margin-right: 10px!important;
+            *margin-right: 6px;
+        }
+
+        .module_16 .box dl dd.pic p {
+            width: 242px;
+            padding: 2px;
+            margin-bottom: 5px;
+        }
+
+        .module_16 .box dl dd.pic p img {
+            display: block;
+            width: 242px;
+            height: 323px;
+        }
+
+        .module_16 .box dl dd.pic span {
+            width: 248px;
+            display: block;
+        }
+
+        .module_16 .box dl dt {
+            float: left;
+            width: 280px;
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .module_16 .box dl dd.txt {
+            float: left;
+            width: 280px;
+            text-indent: 25px;
+            line-height: 22px;
+        }
+
+        .module_16 .box ul {
+            float: left;
+            width: 390px;
+            overflow: hidden;
+        }
+
+        .module_16 .box ul li {
+            float: left;
+            margin-left: 10px;
+            width: 120px;
+            display: inline;
+        }
+
+        .module_16 .box ul li p {
+            display: block;
+            width: 114px;
+            padding: 2px;
+            margin-bottom: 5px;
+        }
+
+        .module_16 .box ul li p img {
+            display: block;
+            width: 114px;
+            height: 152px;
+        }
+
+        .module_16 .box ul li span {
+            display: block;
+            width: 120px;
+            margin-bottom: 5px;
+        }
+
+        .wrapper1 {
+            clear: both;
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .wrapper1 h3 {
+            text-align: left;
+            font-size: 16px;
+            padding: 6px 50px 6px 40px;
+            width: 870px;
+            background: url("http://vi2.ku6img.com/data1/p4/cms/2015/8/17/pic_1439800067104.jpg") no-repeat scroll left top transparent;
+            color: #fff;
+        }
+
+        .wrapper1 h3 span {
+            float: right;
+            margin-right: 10px;
+        }
+
+        .wrapper1 h3 span label {
+            display: inline-block;
+            width: 110px;
+            height: 25px;
+            padding: 2px 5px;
+            background: url(http://i3.ku6img.com/cms/movie/201007/tangshandadizhen201007140/tangshandadizhen201007140/search_bg.gif) no-repeat left center;
+        }
+
+        .wrapper1 h3 span label input {
+            width: 110px;
+            height: 25px;
+            line-height: 25px;
+            background: transparent;
+            border: none;
+            vertical-align: middle;
+        }
+
+        .wrapper1 h3 span a {
+            margin-left: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .aBox1 {
+            background: #ffffff url() repeat-x scroll 0 0;
+            padding: 20px 0 10px;
+        }
+
+        .con1 {
+            margin: 0px auto;
+            overflow: hidden;
+            width: 933px;
+        }
+
+        .ulist21 {
+            float: right;
+            overflow: hidden;
+            width: 365px;
+            margin-top: 5px;
+        }
+
+        .ulist21 li {
+            display: inline;
+            float: left;
+            height: 112px;
+            margin: 0px 3px 20px;
+            overflow: hidden;
+            width: 112px;
+            border: 1px #fff solid;
+            cursor: pointer;
+        }
+
+        .vodp31 {
+            float: left;
+            height: 360px;
+            overflow: hidden;
+            margin-left: 8px;
+            width: 550px;
+            border: 1px #fff solid;
+            margin-top: 5px;
+        }
+        .video-image-warp {
+            display: block;
+            cursor: pointer;
+            width: 210px;
+            height: 119px;
+            overflow: hidden;
+        }
+        .video-image-warp img {
+            width: 210px;
+            
+        }
+        #video-container{width: 100%;}
+        .vd-info .info-name{  width: 60%;}
+        .vd-info .play-count {
+            width: 39%;}
+        .video-item-warp{padding: 0px;}
+        .load-more{    text-align: -webkit-center;text-align: -moz-center;}
+        .video-item{height:225px;}
+        @media (max-width:1180px){
+            .title-li a{padding: 8px 7px;}.title-li a:hover{padding: 8px 7px;}
+        }
+        @media (max-width:1040px){
+            .title-li a{padding: 8px 4px;}.title-li a:hover{padding: 8px 4px;}
+        }
+        .vd-info .vd-info-icon{margin-bottom: 2px;}
+        .top-right{position: absolute;width: 280px;height: 56px;top: 0px;right: 0px;}
+
+        h3 a{
+          -webkit-line-clamp: 4;
+          height:102px;
+        }
+
+        .vd-info div.play-count{
+          display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="navbar">
+    <img class="navbar-logo" src="/images/logo.jpg">
+    <div class="title-li">
+        <a href="/">首页</a>
+                <a href="/detail/69">资讯</a>
+            <a href="/detail/70">娱乐</a>
+            <a class="li-on" href="/detail/71">自制节目</a>
+            <a href="/detail/72">影视</a>
+            <a href="/detail/74">音乐</a>
+            <a href="/detail/75">原创</a>
+            <a href="/detail/80">生活</a>
+            <a href="/detail/93">游戏</a>
+            <a href="/detail/81">健康</a>
+            <a href="/detail/47">汽车</a>
+            <a href="/detail/145">动漫</a>
+    </div>
+    <div class="top-right">
+        <iframe src="https://video-center.ku6.com/video-center/user/topRight" id="topRight" frameborder="0" height="56px"></iframe>
+    </div>
+</div>
+<div class="big-eyes">
+
+        <a class="eye-img" href="https://www.ku6.com/video/detail?id=c8Vd07O9UzR4EB9Svx2Va0H4sN8." target="_blank" style="display: block; z-index: 2; background-image: url(&quot;https://rbv01.ku6.com/wifi/o_1bvu73dk68gh14o51pjencu1bc6g&quot;); opacity: 0.371855;"></a>
+        <a class="eye-img" href="https://www.ku6.com/video/detail?id=qq9G-icn-NO9IH0uH_075RuUW9o." target="_blank" style="z-index: 1; background-image: url(&quot;https://rbv01.ku6.com/wifi/o_1bvu73glicil1bl9ivd1qes1580i&quot;); display: none;"></a>
+        <a class="eye-img" href="https://www.ku6.com/video/detail?id=CJP366eJsbbtSKp6B-wwTzOREws." target="_blank" style="z-index: 1; background-image: url(&quot;https://rbv01.ku6.com/wifi/o_1bvu73jo1suq11s41n4qs2u1176k&quot;); opacity: 0.624345;"></a>
+
+    <div class="ckl_connection item-coin">
+            <a class="ckl_on" data-num="0" href="javascript:void(0)"></a>
+            <a data-num="1" href="javascript:void(0)" class=""></a>
+            <a data-num="2" href="javascript:void(0)" class=""></a>
+    </div>
+
+</div>
+<div class="container">
+
+    <div id="video-container" class="video-item-warp m-t-sm">
+        <!--<h1>精彩视频</h1>-->
+
+
+    <div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=vJWXUgw6P5LzeSRPflevd30COJY."><img src="https://rbv01.ku6.com/wifi/o_1bvm40uog10lvfhk5n11rdk1augj"></a></div><div><h3><a href="/video/detail?id=vJWXUgw6P5LzeSRPflevd30COJY." target="_blank">许千千 左上角的你</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32729</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=_L4uOJDp_tFmoCO7w_6B0NtPVys."><img src="https://rbv01.ku6.com/wifi/o_1bvmbgpr9tdi68i1bgm16pmvgsf"></a></div><div><h3><a href="/video/detail?id=_L4uOJDp_tFmoCO7w_6B0NtPVys." target="_blank">徐云霄 我想我没那么坚强， 每个女孩都一样</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32681</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=JdbD1CHol07vI5e-BtelN7OQxmI."><img src="https://rbv01.ku6.com/wifi/o_1bvm412uu1t26hks1i33op0443n"></a></div><div><h3><a href="/video/detail?id=JdbD1CHol07vI5e-BtelN7OQxmI." target="_blank">许千千 bilili 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32649</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=CXPYMEpeL_NFXK2Sei8NPhjEWuk."><img src="https://rbv01.ku6.com/wifi/o_1bvm420n33eordom6f1j77c351j"></a></div><div><h3><a href="/video/detail?id=CXPYMEpeL_NFXK2Sei8NPhjEWuk." target="_blank">夜唱 徐云霄 好好</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>夜唱</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32173</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=-nQgX01xb1fEeuZE0BzVZVXPp6c."><img src="https://rbv01.ku6.com/wifi/o_1bvm41c4e1iahi3t181d401ak4v"></a></div><div><h3><a href="/video/detail?id=-nQgX01xb1fEeuZE0BzVZVXPp6c." target="_blank">许千千 怦然心动 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>178220</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=XyNSIpVMwr8kIah8X2XjwcvBFdY."><img src="https://rbv01.ku6.com/wifi/o_1bvmdcd0f1b9fni515on1sfecvs1p"></a></div><div><h3><a href="/video/detail?id=XyNSIpVMwr8kIah8X2XjwcvBFdY." target="_blank">原声带 疯一样的男人----孟志 夜无声</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>31502</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=dND261mMeltVqaokNkPp0_jLO8g."><img src="https://rbv01.ku6.com/wifi/o_1bvmdc2ug17guim1rnq12e230g1h"></a></div><div><h3><a href="/video/detail?id=dND261mMeltVqaokNkPp0_jLO8g." target="_blank">原声带 疯一样的男人---孟志 .离别.</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30792</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=siSVmu8tkzi9hObmHlmYkhg56xk."><img src="https://rbv01.ku6.com/wifi/o_1bvm79puidnjugmamg17ei1fona"></a></div><div><h3><a href="/video/detail?id=siSVmu8tkzi9hObmHlmYkhg56xk." target="_blank">走着走着就老了哈尼比斯</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32398</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=w5TN9gWjzuhGRdXW2nrGsa3oC3w."><img src="https://rbv01.ku6.com/wifi/o_1bvmd90nqvc16mr52q1v8bru9k"></a></div><div><h3><a href="/video/detail?id=w5TN9gWjzuhGRdXW2nrGsa3oC3w." target="_blank">原声带 爱像流星</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>33098</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=Ik3DXDF3xUzZfj-KqnNFkbxkCbo."><img src="https://rbv01.ku6.com/wifi/o_1bvm7an06nnm1jpr1tf13315hh14"></a></div><div><h3><a href="/video/detail?id=Ik3DXDF3xUzZfj-KqnNFkbxkCbo." target="_blank">原声带 张东朗 维西谣</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>31887</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=CEi93GTprBeaFJPf8Lvae3s05So."><img src="https://rbv01.ku6.com/wifi/o_1bvm42cnnmec11s71ceu1b9ll3a1r"></a></div><div><h3><a href="/video/detail?id=CEi93GTprBeaFJPf8Lvae3s05So." target="_blank">夜唱 徐云霄 吻你之时别再躲</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29074</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=2tF0x5Va18Vtzf7vLLzHSAoBImI."><img src="https://rbv01.ku6.com/wifi/o_1bvm7a2s218u7e9e5391o93g86o"></a></div><div><h3><a href="/video/detail?id=2tF0x5Va18Vtzf7vLLzHSAoBImI." target="_blank">原声带 张东朗 月亮粑粑</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32811</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=DevafKh50qo4sTd9uOpvaBqlZBw."><img src="https://rbv01.ku6.com/wifi/o_1bvmd944h1dvtfcf1gi1a691fcjp"></a></div><div><h3><a href="/video/detail?id=DevafKh50qo4sTd9uOpvaBqlZBw." target="_blank">原声带 边缘行走 那些年的那些人</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32507</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=bb3MfjoOGUqUunyUxvwe9xn0D3U."><img src="https://rbv01.ku6.com/wifi/o_1bvmdbu4c150b179j1n7373ho221d"></a></div><div><h3><a href="/video/detail?id=bb3MfjoOGUqUunyUxvwe9xn0D3U." target="_blank">原声带 疯一样的男人---孟志 风雨迷途</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29390</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=yp-PpmSTXrdyp_S71b9kJCSmRUg."><img src="https://rbv01.ku6.com/wifi/o_1bvm7a6mi1hq6vfr9ds4p81kius"></a></div><div><h3><a href="/video/detail?id=yp-PpmSTXrdyp_S71b9kJCSmRUg." target="_blank">原声带 张东朗 兄弟一起飞</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30105</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=s7CaS2CYMLouhyhXIjXm1H8_Sbw."><img src="https://rbv01.ku6.com/wifi/o_1bvm1mvts1s2j17fj1j551eikcu0s"></a></div><div><h3><a href="/video/detail?id=s7CaS2CYMLouhyhXIjXm1H8_Sbw." target="_blank">王雪晶 罐头</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30170</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=63bRUM8ZDCRQcgCC5BJxCCXNGUo."><img src="https://rbv01.ku6.com/wifi/o_1bvm79uv8itj5cskga1jv4eik"></a></div><div><h3><a href="/video/detail?id=63bRUM8ZDCRQcgCC5BJxCCXNGUo." target="_blank">原声带 张东朗 在天涯</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>28683</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=bUL-DNpR3FFudSHyptUW7RiFp50."><img src="https://rbv01.ku6.com/wifi/o_1bvm41ghg1kdb174c1big7f2143g13"></a></div><div><h3><a href="/video/detail?id=bUL-DNpR3FFudSHyptUW7RiFp50." target="_blank">许千千 一路绽放 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30541</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=GnoHn_Ff1oeoTyjTX98BtgEbQlA."><img src="https://rbv01.ku6.com/wifi/o_1bvm7acn61f6h12d494bnrd122110"></a></div><div><h3><a href="/video/detail?id=GnoHn_Ff1oeoTyjTX98BtgEbQlA." target="_blank">原声带 张东朗 兄弟辛苦了</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>32993</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=kgLjjoNvMeoqduWymQjDG_EmJaU."><img src="https://rbv01.ku6.com/wifi/o_1bvm1mrjhm6t1mmv3f5veu1j80o"></a></div><div><h3><a href="/video/detail?id=kgLjjoNvMeoqduWymQjDG_EmJaU." target="_blank">王雪晶. HOW FAR L'LL GO</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30053</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=yMLeedvcjzOHTEr7l7ps0uTerS4."><img src="https://rbv01.ku6.com/wifi/o_1bvmdc8gri5h22130d64v1jnb1l"></a></div><div><h3><a href="/video/detail?id=yMLeedvcjzOHTEr7l7ps0uTerS4." target="_blank">原声带 疯一样的男人---孟志 .这就是北京</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>34709</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=767CmoIk4R2rNS7Y9gLvl-UH3wc."><img src="https://rbv01.ku6.com/wifi/o_1bvm40qhq5515r11fcp16gv1momf"></a></div><div><h3><a href="/video/detail?id=767CmoIk4R2rNS7Y9gLvl-UH3wc." target="_blank">许千千 离心岛 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>31753</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=gHz_uYylItjCCD68ye66j9ZXPFc."><img src="https://rbv01.ku6.com/wifi/o_1bvmdcqe41jtt1u0tu1k7q1rn025"></a></div><div><h3><a href="/video/detail?id=gHz_uYylItjCCD68ye66j9ZXPFc." target="_blank">原声带 倪健 北方</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>42804</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=cIigpThImsBRn9D8T8N_WUWtFYU."><img src="https://rbv01.ku6.com/wifi/o_1bvm1mni6rkok2c1ca81mhg1qm4k"></a></div><div><h3><a href="/video/detail?id=cIigpThImsBRn9D8T8N_WUWtFYU." target="_blank">王雪晶. TRULY DEEPIY I BELIEVE</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>27297</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=b8BzToeZ9zIb45wTlfjWBxmzUDQ."><img src="https://rbv01.ku6.com/wifi/o_1bvm7asdh5e3gqe1mlpi3qhtp18"></a></div><div><h3><a href="/video/detail?id=b8BzToeZ9zIb45wTlfjWBxmzUDQ." target="_blank">原声带 张东朗 人间</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29342</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=9O4Gh7mhbs1kKMMqu3lpIb-8-0w."><img src="https://rbv01.ku6.com/wifi/o_1bvmdd1m41tod13sa16231nv5123g29"></a></div><div><h3><a href="/video/detail?id=9O4Gh7mhbs1kKMMqu3lpIb-8-0w." target="_blank">原声带 倪健 灯笼里的爱情</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>43980</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=ye-3S3j93qeqydlphojHoQrffEk."><img src="https://rbv01.ku6.com/wifi/o_1bvm41oos1sgh1ori1k0qoshpd1b"></a></div><div><h3><a href="/video/detail?id=ye-3S3j93qeqydlphojHoQrffEk." target="_blank">夜唱 徐云霄 不如</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>夜唱</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>33553</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=aCgMEk__skmTL9-Dmr-MNfY72zc."><img src="https://rbv01.ku6.com/wifi/o_1bvm7bgj6ftl18dd3hj154g1iqa1k"></a></div><div><h3><a href="/video/detail?id=aCgMEk__skmTL9-Dmr-MNfY72zc." target="_blank">原声带 倪健 月下的岛屿</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29222</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=tHFEp-LPuKa0sj9A_2kGY4DJG9s."><img src="https://rbv01.ku6.com/wifi/o_1bvm1mid51vd4906iqgp2p10k6a"></a></div><div><h3><a href="/video/detail?id=tHFEp-LPuKa0sj9A_2kGY4DJG9s." target="_blank">王雪晶. 在树上唱歌</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29121</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=51Y9nXpEi4qnMPwongTp4W8oaq0."><img src="https://rbv01.ku6.com/wifi/o_1bvm7b0rrfom95bdsd1pbqgpd1c"></a></div><div><h3><a href="/video/detail?id=51Y9nXpEi4qnMPwongTp4W8oaq0." target="_blank">原声带 张东朗 答案</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>33140</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=i1irYWmTuAduSci3vNDq9mmHcUA."><img src="https://rbv01.ku6.com/wifi/o_1bvmdcgtj17ak1rr019o71qhq14ja1t"></a></div><div><h3><a href="/video/detail?id=i1irYWmTuAduSci3vNDq9mmHcUA." target="_blank">原声带 疯一样的男人----孟志 遗忘</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>33165</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=bIrKSWYGVGMqN3upaQyJiEsKO20."><img src="https://rbv01.ku6.com/wifi/o_1bvm7bcgg3hkbi9n9s8ahkug1g"></a></div><div><h3><a href="/video/detail?id=bIrKSWYGVGMqN3upaQyJiEsKO20." target="_blank">原声带 张东朗 画里含山</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30112</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=XqfK_a6w1jmAw-EbM5dXC6_OYtY."><img src="https://rbv01.ku6.com/wifi/o_1bvm417s61fei8dv7sd7ishadr"></a></div><div><h3><a href="/video/detail?id=XqfK_a6w1jmAw-EbM5dXC6_OYtY." target="_blank">许千千 牛奶色彩 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>31829</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=SJE4_Ery2u8sCDUNejSkeqLsMAw."><img src="https://rbv01.ku6.com/wifi/o_1bvmdckp318l8qlgl8r14a2htt21"></a></div><div><h3><a href="/video/detail?id=SJE4_Ery2u8sCDUNejSkeqLsMAw." target="_blank">原声带 疯一样的男人----孟志 游魂</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>39207</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=xXDos0aOx43V7SUxX2XJsanGndc."><img src="https://rbv01.ku6.com/wifi/o_1bvmbh22erpj65g1tia159q8llp"></a></div><div><h3><a href="/video/detail?id=xXDos0aOx43V7SUxX2XJsanGndc." target="_blank">徐云霄 小幸运</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29928</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=i7UpypGqhpBxHOsSZ4rBzL8eijA."><img src="https://rbv01.ku6.com/wifi/o_1bvm41soi1mjj13ma1n4d1iq91am11f"></a></div><div><h3><a href="/video/detail?id=i7UpypGqhpBxHOsSZ4rBzL8eijA." target="_blank">夜唱 徐云霄 敢爱的冲动</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>夜唱</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>31640</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=Gyxqz55FuFmx8NXnj74mzbzFwi8."><img src="https://rbv01.ku6.com/wifi/o_1bvm41kksqvoqjh1g3l1ldg1oam17"></a></div><div><h3><a href="/video/detail?id=Gyxqz55FuFmx8NXnj74mzbzFwi8." target="_blank">许千千 一直在等你 原声带</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30463</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=3G7r04mcsJE37UKCVp_VQy4l1gI."><img src="https://rbv01.ku6.com/wifi/o_1bvm426cl1oia34c1dav602sh41n"></a></div><div><h3><a href="/video/detail?id=3G7r04mcsJE37UKCVp_VQy4l1gI." target="_blank">夜唱 徐云霄 如果可以</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>夜唱</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>30460</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=bOqWMJXeFFMNUOB3OW_OtkLP_eA."><img src="https://rbv01.ku6.com/wifi/o_1bvm1n3qm17ad2ld1o5bdai1bl410"></a></div><div><h3><a href="/video/detail?id=bOqWMJXeFFMNUOB3OW_OtkLP_eA." target="_blank">王雪晶 单细胞</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>26785</span></div></div></div></div><div class="video-item"><div class="video-image-container"><a class="video-image-warp" target="_blank" href="/video/detail?id=cdI3T1s_QTbkasSSG7AU80hFPk4."><img src="https://rbv01.ku6.com/wifi/o_1bvm7bkc91ivg1tsl1j2l1vum1ndi1o"></a></div><div><h3><a href="/video/detail?id=cdI3T1s_QTbkasSSG7AU80hFPk4." target="_blank">原声带 倪健 途</a></h3><div class="vd-info"><div class="info-name"><img src="/images/author.png" class="vd-info-icon"><span>原声带</span></div><div class="play-count"><img src="/images/play.png" class="vd-info-icon"><span>29989</span></div></div></div></div></div></div>
+
+
+
+    <div class="load-more">
+        <img src="/images/load-more.png">
+    </div>
+
+
+</div>
+<div class="legal_footer" style="display: none;">
+    <div class="container">
+        <div class="link-item">
+            <div class="title-link">条款</div>
+            <div class="link-line first">
+                <a class="link first" href="./2017/legal.html">版权及隐私情况声明</a>
+                <a class="link" href="./2017/legal.html">使用协议</a>
+                <a class="link" href="./2017/legal.html">收费协议</a>
+                <a class="link" href="./2017/legal.html">直播条款</a>
+            </div>
+            <div class="link-line">
+                <a class="link first" href="./2017/legal.html">直播用户隐私政策</a>
+                <a class="link" href="./2017/legal.html">视频看看用户协议</a>
+            </div>
+        </div>
+        <div class="link-item">
+            <div class="title-link">公司</div>
+            <div class="link-line first">
+                <a class="link first" href="./2017/legal.html">公司介绍</a>
+                <a class="link" href="./2017/legal.html">人才招聘</a>
+                <a class="link" href="./2017/legal.html">版权声明</a>
+                <a class="link" href="./2017/legal.html">联系我们</a>
+            </div>
+            <div class="link-line">
+                <a class="link first" href="./2017/legal.html">广告合作</a>
+                <a class="link" href="./2017/legal.html">广告声明</a>
+                <a class="link" href="./2017/legal.html">友情链接</a>
+                <a class="link" href="./2017/legal.html">意见反馈</a>
+            </div>
+        </div>
+        <div class="link-item last">
+            <div class="title-link">举报</div>
+            <div class="link-line first">
+                <a class="link first" href="http://www.ku6.com/c2017/jubaozhuanqu/">儿童色情信息举报</a>
+                <a class="link" href="https://www.12377.cn/">网络举报APP下载</a>
+            </div>
+            <div class="link-line">
+                <a class="link first" href="https://www.12377.cn/">网络有害信息举报</a>
+                <a class="link" href="https://www.12377.cn/">暴恐有害信息举报</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ckl_footer no-margin">
+    <p class="ckl_plocas">
+        <a class="ckl_i1" style="background:url(http://rbv01.ku6.com/wifi/o_1br5qu0khgmtms71r0ihnc1kc3a) no-repeat;width:142px;height:52px" target="_blank" href="https://www.12377.cn/"></a>
+        <a class="ckl_i1" style="background:url(https://rbv01.ku6.com/wifi/o_1fb0v19k810g11svchfg1pkf1o86a) no-repeat;height:52px;width:142px" target="_blank" href="/2017/report.html"></a>
+        <a class="ckl_i1" style="background:url(http://rbv01.ku6.com/wifi/o_1br5r073d12urivbkgo4861nt3e) no-repeat;height:52px;width:142px" target="_blank" href="https://www.12377.cn/"></a>
+        <a class="ckl_i1" style="background:url(http://rbv01.ku6.com/wifi/o_1br5r09kd1240gq0tv1n4kshlg) no-repeat;height:52px;width:142px" target="_blank" href="https://www.12377.cn/"></a>
+        <a class="ckl_i1" style="background:url(https://rbv01.ku6.com/wifi/o_1ebveckjo1reg1kja1j2i1gv411d7a) no-repeat;height:52px;width:142px" target="_blank" href="http://www.shdf.gov.cn/shdf/channels/740.html"></a>
+        <a class="ckl_i1" style="background:url(https://rbv01.ku6.com/wifi/o_1g2rm1luj1fao1j7616br1teeajoa) no-repeat;height:52px;width:142px" target="_blank" href="/2017/cyberviolence.html"></a>
+    </p>
+    <div class="ckl_copy">
+        版权所有 CopyRight 2006-2022 酷6网 |
+        <a target="_blank" href="https://rbv01.ku6.com/wifi/o_1fnast0u34dj1l921tehhjja50a">京ICP证060931号</a> |
+        <a href="https://www.ku6.com/2017/jingwangwen_2.html" target="_blank">京网文【2021】2728-753</a> |
+        <a target="_blank" href="https://www.ku6.com/2017/licence_2.html">网络视听许可证：0108267号 | </a>
+        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802027197" style="background-image:url(http://www.beian.gov.cn/file/ghs.png);background-position:0 0;background-repeat:no-repeat;padding-left:22px">京公网安备：11010802027197 </a><br>
+        <a target="_blank" href="https://www.ku6.com/detail/519">版权问题说明</a>|
+        <a target="_blank" href="https://www.ku6.com/detail/520">用户服务协议</a>|
+        <a target="_blank" href="https://www.ku6.com/detail/525">隐私权政策</a><br>
+        广播电视节目制作经营许可证：（京）字第403号 | 不良信息举报电话：022-87276266 举报邮箱：tj_wgts@zenmen.com<br>
+        互联网药品信息服务资格证：（京）-非经营性-2018-0021 | 营业性演出许可证：京演（机构）2769号<br>
+    </div>
+    <p class="ckl_plocas">
+        <a class="ckl_i1" target="_blank" href="http://www.beian.miit.gov.cn/publish/query/indexFirst.action"></a>
+        <a class="ckl_i2" target="_blank" href="http://www.12377.cn/"></a>
+        <a class="ckl_i3" target="_blank" href="http://www.cyberpolice.cn/wfjb/"></a>
+        <a id="_pingansec_bottomimagelarge_brand" target="_blank" href="http://si.trustutn.org/info?sn=829170320027574224445&amp;certType=1" style="background-image:none;width:134px"><img style="vertical-align:inherit" src="http://v.trustutn.org/images/cert/brand_bottom_large.jpg"></a>
+        <a class="ckl_i4" target="_blank" href="http://www.itrust.org.cn/yz/pjwx.asp?wm=1788635174"></a>
+        <a target="_blank" class="ckl_i6" title="网络文化经营单位" href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/EBE098FBB0E54229A9A92D83D8354B5E"></a>
+    </p>
+</div>
+
+<script src="/scripts/jquery-1.11.1.min.js"></script>
+
+
+<script type="text/javascript">
+
+
+
+
+    /** banner 开始 ********************************* */
+    var cur = next = 0, len = $(".big-eyes .eye-img").length, box = $(".big-eyes .eye-img"), navs = $(".item-coin a");
+
+    var interval=setInterval(function () {
+        if (cur < len - 1) {
+            next = cur + 1
+        } else {
+            next = 0;
+        }
+        next = cur < len - 1 ? cur + 1 : 0;
+        change();
+    }, 3000);
+    navs.hover(function(){
+        clearInterval(interval);
+        $(box[cur]).stop(true, true).fadeOut().css('z-index', 1);
+        cur = parseInt($(this).attr("data-num"));
+
+        $(box[cur]).stop(true, true).css('z-index', 2).fadeIn();
+        navs.removeClass("ckl_on").eq(cur).addClass("ckl_on");
+    },function(){
+        interval=setInterval(function () {
+            if (cur < len - 1) {
+                next = cur + 1
+            } else {
+                next = 0;
+            }
+            next = cur < len - 1 ? cur + 1 : 0;
+            change();
+        }, 3000);
+    });
+    var change = function () {
+
+        if(len==1){return false;};
+        $(box[cur]).stop(true, true).fadeOut().css('z-index', 1);
+        cur = next;
+        $(box[cur]).stop(true, true).css('z-index', 2).fadeIn();
+        navs.removeClass("ckl_on").eq(next).addClass("ckl_on");
+    }
+
+    /** banner 结束 ********************************* */
+
+
+
+    var cache = {};
+    function tmpl(str, data) {
+        var fn = !/\W/.test(str)
+                ? cache[str] = cache[str] || tmpl(document.getElementById(str).innerHTML)
+                : new Function("obj", "var p=[],print=function(){p.push.apply(p,arguments);};" + "with(obj){p.push('" + str.replace(/[\r\t\n]/g, " ").split("<%").join("\t").replace(/((^|%>)[^\t]*)'/g, "$1\r").replace(/\t=(.*?)%>/g, "',$1,'").split("\t").join("');").split("%>").join("p.push('").split("\r").join("\\'") + "');}return p.join('');");
+        return data ? fn(data) : fn
+    }
+
+    var tpl = '<div class="video-item">' +
+            '<div class="video-image-container">' +
+            '<a class="video-image-warp" target="_blank" href="<%=videoUrl%>">' +
+            '<img src="<%=videoImage%>" />' +
+            '</a>' +
+            '</div>' +
+            '<div>' +
+            '<h3>' +
+            '<a href="<%=videoUrl%>" target="_blank"><%=videoName%></a>' +
+            '</h3>' +
+            '<div class="vd-info">' +
+            '<div class="info-name">' +
+            '<img src="/images/author.png" class="vd-info-icon" />' +
+            '<span><%=authorName%></span>' +
+            '</div>' +
+            '<div class="play-count">' +
+            '<img src="/images/play.png" class="vd-info-icon" />' +
+            '<span><%=videoCount%></span>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>';
+
+    /*
+
+    var jcList = [];
+    var jcfragment = $('<div>');
+    for (var j = 0; j < jcList.length; j++) {
+        var jcItemData = jcList[j];
+        var jcItemDom = tmpl(tpl, {
+            videoUrl: jcItemData.detailUrl + '?vid=' + jcItemData.vid + "&title=" + jcItemData.title,
+            videoImage: jcItemData.icon,
+            videoName: jcItemData.title,
+            authorName: jcItemData.publisher,
+            videoCount: jcItemData.playCnt
+        });
+        jcfragment.append(jcItemDom);
+    }
+    $('#video-container').append(jcfragment);
+
+    */
+
+    /*
+    $.ajax({
+        type: "get",
+        url: "http://tvshow.ku6.com/Index/listRooms",
+        data: {},
+        dataType: "jsonp",
+        jsonp: "cb",
+        success: function (data) {
+            console.log(data);
+            var jcfragment = $('<div>');
+            $(data).each(function (i, el) {
+
+                var itemData = data[i];
+                var jcItemDom = tmpl(tpl, {
+                    videoUrl: 'http://tvshow.ku6.com/' + itemData.roomId,
+                    videoImage: itemData.img,
+                    videoName: itemData.title,
+                    authorName: itemData.author,
+                    videoCount: itemData.views
+                });
+                jcfragment.append(jcItemDom);
+
+            })
+        },
+        error: function () {
+            console.log("error");
+        }
+    })
+    */
+
+    function loadData(page, pageSize, subjectId) {
+        $.ajax({
+            type: "get",
+            url: "/video/feed",
+            data: {
+                "pageNo": page,
+                "pageSize": pageSize,
+                "subjectId":subjectId
+            },
+            dataType: "json",
+            success: function(result) {
+                if (result.retCd == 0) {
+                    var listData = result.data;
+                    console.log(listData, '<---');
+                    if (listData && listData.length) {
+                        var fragment = $('<div>');
+                        for (var i = 0; i < listData.length; i++) {
+                            var itemData = listData[i];
+                            var itemDom = tmpl(tpl, {
+                                videoUrl: itemData.detailUrl,
+                                videoImage: itemData.picPath,
+                                videoName: itemData.title,
+                                authorName: itemData.publisher,
+                                videoCount: itemData.playCnt
+                            });
+                            fragment.append(itemDom);
+                        }
+                        $('#video-container').append(fragment);
+                    }
+                }
+            },
+            error: function() {
+                console.log('error');
+            }
+        });
+    }
+
+    var subjectId = Number('71');
+    var page = 0;
+    var pageSize = 40;
+    loadData(page++, pageSize, subjectId);
+    $('.load-more').click(function () {
+        loadData(page++, pageSize, subjectId);
+       // TODO 5次加载更多动作完成后，“加载更多”按钮隐藏显示  https://lpms.51y5.net/tasks/109221
+        if(page > 5) {
+            $('.load-more').hide();
+        }
+    });
+
+
+</script>
+
+
+</body></html>
